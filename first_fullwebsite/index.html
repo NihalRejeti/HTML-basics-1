@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML</title>
+</head>
+<body>
+    <!-- BASICS -->
+    <!-- there are two types of tags
+    type 1: it has both opening(<>) and closing(</>) tags
+    for ex: <p> </p>, <h1></h2>
+    type 2: it is self closing tag. it dosent have separate 
+    closing tag
+    for ex: <br>, <input> -->
+    <h1>Hello world!</h1>
+    <!-- headings are there from H1 to H6. H1 has the highest 
+        priority while H6 has the lowest priority. Size changes
+         as the priority changes  -->
+    <p>this is a <em>sample</em> paragraph</p>
+    <!-- the above tag is a paragraph tag -->
+    <!-- em tag is the emphasis tag -->
+    <a href="https://www.youtube.com/watch?v=HcOc7P5BMi4&t=1s">link to the html course video</a>
+    <!-- <a> is an anchor tag which has href. we can keep links in the name we give in href -->
+        <br>
+        <a href="http://127.0.0.1:5500/first_project.html" >My first project</a> <!-- this link cannot be open because i havent mentioned the folder name. if it is in the same folder then there is no need to mention the folder name  -->
+        <br>
+        <a href="http://127.0.0.1:5500/1st_web_project/first_project.html" target="_main">My first project</a>
+        <!-- (target="_main") now when we clic the link this tag will open the page in the new tag -->
+        <br>
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/12/Griffith-in-anime.jpg" height="300" width="450" alt="its griffith"> 
+        <br> <!--br = next line tag-->
+        <img src="/my_insta_dp.jpg" alt="its my insta dp">
+        <br>
+        <b>am I cool?</b> <!--Bold tag-->
+        <i>am I cool?</i> <!--italic tag-->
+        <u>am I cool?</u> <!--underline tag-->
+        <hr> <!--hr tag used to display a horizontal ruler, used to separate content-->
+        <p>hello peeps i am <big>nihal</big>
+            <hr>
+        <p> I'm studying in <small>vitap</small></p>
+        <!-- <big> big tag
+            <small> small tag-->
+        <hr>
+       <p>H<sub>2</sub>O <!--this is subscript tag makes letters or numbers smaller and keeps it down. it is useful when we are dealing with chemical formulas -->
+    <br>X <sup>9</sup></p> <!--it is superscript tag makes letters and numbers smaller and keeps it bigger. it is useful when dealing with mathematical ooperations-->
+    <br>
+    <p>Lorem             ipsum dolor sit amet consectetur adipisicing elit. Atque quae ipsum nam nihil ullam laboriosam 
+        suscipit, neque illo deserunt enim adipisci sequi excepturi. Vitae laboriosam illum voluptates ex? Harum, suscipit!</p>
+    <!--lorem is a sample paragraph-->
+    <pre>Lorem           ipsum dolor sit amet consectetur adipisicing elit. Ea soluta odio sunt et quas cum mollitia adipisci dolores excepturi, 
+        suscipit praesentium eligendi eveniet autem natus, ducimus placeat aut reprehenderit aperiam?</pre>
+    <!-- pre tag is also a paragraph tag, it is used to display text as it is(without ignoring spaces and nextline) -->
+
+
+    <!-- page layout techniques
+     !) semantic tags (understandable tags ex:header,footer)
+     2) non semantic tags (non understandable tags ex: div, br)-->
+        <!-- header tag -->
+        <header>
+            <pre>who can survive the death match
+            <h3>Guts          or            griffith</h3></pre>
+        </header>
+        <footer>comment me below heh</footer>
+        <!-- nrmly when designing a web page we divide the body into two parts.. header and footer 
+        MAIN TAG:
+        Inside main tag;
+       1)SECTION TAG: for a section your page
+       2)ARTICLE TAG: for an article on your page
+       3)ASIDE TAG:   for content aside main content(ads)-->
+
+        <header>
+            <h1>My potifolio</h1>
+            <main>
+                <section>Education</section>
+                <section>Hobbies</section>
+                <article>my goals: my goal is to become a bitch fucker</article>
+                <aside>this is an ad</aside>
+                <a href="https://berserkchapters.com/" target="_main"> <img src="https://qph.cf2.quoracdn.net/main-qimg-17da08da08851c756fc87e05074c2364-pjlq" alt="way to the berserk manga"></a>
+                <!-- target tag opens the link in the new tab -->
+            </main>
+        </header>
+        <!-- non semantic tags
+        DIV TAG is a imaginary container used for other HTML ELEMENTS
+            It is a block element(Takes full width) -->
+            <div>
+                <p>namasthe</p>
+                <p>hello</p>
+                <p>Denguthe</p>
+            </div>
+            <!-- SPAN TAG is also a container used for other HTML elements.. Inline Element(takes width as per size) -->
+            <span>
+                <p>good bye</p>
+                <p>Fuck off</p>
+            </span>
+            <!-- lists -->
+            <main>
+                <ul>
+                    <li>vegetable</li>
+                    <ol>
+                        <li>tomato</li>
+                        <li>potato</li>
+                    </ol>
+                    <li>fruit</li>
+                    <ol>
+                        <li>apple</li>
+                        <li>mango</li>
+                    </ol>
+                </ul>
+                
+            </main>
+            <!-- TABLES <table> -->
+            <!-- <tr> used to display table row
+                 <tr> used to display table data
+                 <th> used to display table header -->
+            <!-- thead tag wraps table head.
+                 tbody tag wraps the table body
+                these are like table layouts(like div)  -->
+    <table>
+        <caption>Student data</caption> <!--CAPTIONS in tables-->
+        <thead><tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Gender</th>
+        </tr> 
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Nihal</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Dhyanesh</td>
+            <td>Gay</td>
+        </tr>
+    </tbody>
+    </table>
+    <table>
+        <caption>Student data</caption> <!--CAPTIONS in tables-->
+        <thead><tr>
+            <th colspan="3">Name</th>
+            <!-- colspan is a tag used to merge the columns -->
+        </tr> 
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Nihal</td>
+            <td>Male</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <!-- FORMS -->
+    <!-- forms are used to collect data from the user -->
+    <form action="/action.php">
+        <!-- there are lots of types of inputs -->
+        <input type="text">sample 
+        <input type="text" placeholder="type something">sample
+        <!-- check the difference between the two lines then you will understand the work of placeholder attribute -->
+       <br><br>
+        <div>
+            <input type="text" placeholder="enter your username!">
+        </div><br>
+        <div>
+            <input type="password" placeholder="Enter your password">
+        </div>
+        <label for="1">
+            <input type="radio" value="class 10" id="1">class 10
+            <input type="radio" value="class 11" id="2">class 11
+        </label>
+            <!-- we haven't given a name so it is the multiple choice -->
+                <br>
+        <label for="3">
+            <input type="radio" value="class 9" name="class" id="3">class 10
+            <input type="radio" value="class 11" name="class" id="4">class 11
+            <!-- now its not multiple type -->
+            <!-- in the 1st line we given the value "class 9" but it will show on the website class 10. even tho you press class 10, it will take the value(class 9). value is like a special name -->
+        </label>
+<!-- see now even by clicking both the class 10 text we will select. but its not the same for the both class 11. Because we gave labels to both the class 10. Labels have IDs which has the unique value. label tag gives the entire thing a label  -->
+
+<!-- class attributes
+class attributes are group where as ids are unique -->
+<br>
+<!-- in checkbox you an select multiple options -->
+<label for="69">
+    <input type="checkbox" value="69 eww" name="myfeatures" id="69">sexy
+</label>
+    <input type="checkbox" value="1" name="myfeatures"><b>Hot</b>
+    <input type="checkbox"><b><em><i>Handsome</i></em></b> <br><br>
+
+    <!-- TEXTAREA tag -->
+
+    <textarea name="compliments lol" id="" cols="30" rows="10" placeholder="describe me in 50 words then I might consider your proposal">Describe me</textarea>
+
+    <!-- SELECT TAG -->
+    <br><br>
+    <select name="city">
+        <option value="delhi">Delhi</option>
+        <option value="vizag" >Vizag</option>
+        <option value="guntur">guntur</option>
+    </select>
+    </form><br><br>
+    <p><b>this where i learned </b></p>
+    <br>
+    <!-- IFRAME -->
+    <!-- iframes are for to show another website on our website. to do that go to the website and copy the link or click on  the share button on the website. now click on the embedded option. copy the ifram program and paste it on the html editor -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br><br>
+    <video src="./video.mp4" height="300" width="500" controls loop autoplay></video>
+    <!-- it is also same as img src -->
+    <!-- control is the attribute. we can control the video by using it -->
+    <!-- loop attribute by using this the video plays in the loop -->
+    <!-- autoplay attribute by using this the video plays automatically -->
+    <br><br>
+    <textarea name="feedback" cols="30" rows="10" placeholder="please give me the feedback"></textarea>
+    <br>
+    <input type="submit" value="submit"> click here after giving the feedback
+    <br>
+    <h1><b><em><i><u>thank you darling</u></i></em></b></h1>
+
+</body>
+</html>
